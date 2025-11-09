@@ -211,11 +211,11 @@
   <button id="saveBtn">💾 Download JSON File</button>
 
   <script>
-    const initialData = [
-      { type: "Domestic", city: "Mumbai", company: "India Steel Co.", contactName: "Rajesh K.", contactNumber: "9876543210", email: "rajesh@indiasteel.in", website: "http://indiasteel.in" },
-      { type: "International", city: "Berlin", company: "EuroParts GmbH", contactName: "Lena Schmidt", contactNumber: "+49301234567", email: "lena@europarts.de", website: "http://europarts.com" },
-      { type: "Domestic", city: "Delhi", company: "Capital Chem Ltd.", contactName: "Priya Sharma", contactNumber: "9000111222", email: "priya@capitalchem.in", website: "http://capitalchem.in" }
-    ];
+    // const initialData = [
+    //   { type: "Domestic", city: "Mumbai", company: "India Steel Co.", contactName: "Rajesh K.", contactNumber: "9876543210", email: "rajesh@indiasteel.in", website: "http://indiasteel.in" },
+    //   { type: "International", city: "Berlin", company: "EuroParts GmbH", contactName: "Lena Schmidt", contactNumber: "+49301234567", email: "lena@europarts.de", website: "http://europarts.com" },
+    //   { type: "Domestic", city: "Delhi", company: "Capital Chem Ltd.", contactName: "Priya Sharma", contactNumber: "9000111222", email: "priya@capitalchem.in", website: "http://capitalchem.in" }
+    // ];
 
     let companies = JSON.parse(localStorage.getItem('companies')) || initialData;
     let editIndex = null;
