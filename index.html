@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supplier Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f9fafb;
+    }
+    h1 {
+      text-align: center;
+    }
+    .controls {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+    input, button, select {
+      padding: 8px;
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background: #f3f4f6;
+    }
+    form {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      align-items: center;
+    }
+    form input, form select {
+      padding: 6px;
+    }
+    #saveBtn {
+      margin-top: 15px;
+      display: block;
+    }
+    .action-btn {
+      cursor: pointer;
+      padding: 4px 8px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+    }
+    .edit-btn {
+      background: #2563eb;
+    }
+    .delete-btn {
+      background: #dc2626;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Supplier Details</h1>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search by city, company or type...">
+    <button id="sortBtn">Sort A-Z by City</button>
+  </div>
+
+  <table id="companyTable">
+    <thead>
+      <tr>
+        <th>SI No</th>
+        <th>Type</th>
+        <th>City</th>
+        <th>Company Name</th>
+        <th>Contact Name</th>
+        <th>Contact Number</th>
+        <th>Email ID</th>
+        <th>Website</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <form id="addForm">
+    <select id="type" required>
+      <option value="" disabled selected>Select Type</option>
+      <option value="Domestic">Domestic</option>
+      <option value="International">International</option>
+    </select>
+    <input type="text" id="city" placeholder="City" required>
+    <input type="text" id="company" placeholder="Company Name" required>
+    <input type="text" id="contactName" placeholder="Contact Name" required>
+    <input type="text" id="contactNumber" placeholder="Contact Number" required>
+    <input type="email" id="email" placeholder="Email ID" required>
+    <input type="text" id="website" placeholder="Website" required>
+    <button type="submit">Add / Update Entry</button>
+  </form>
+
+  <button id="saveBtn">Download JSON</button>
+
+ <script>
+  let companies = JSON.parse(localStorage.getItem('companies')) || [];
+  let editIndex = null;
+
+  const tableBody = document.getElementById('tableBody');
+  const searchInput = document.getElementById('search');
+  const sortBtn = document.getElementById('sortBtn');
+  const form = document.getElementById('addForm');
+  const saveBtn = document.getElementById('saveBtn');
+
+  // Render table function
+  function renderTable(data = companies) {
+    tableBody.innerHTML = "";
+    data.forEach((item, index) => {
+      const row = `
+        <tr>
+          <td>${index + 1}</td>
+          <td>${item.type}</td>
+          <td>${item.city}</td>
+          <td>${item.company}</td>
+          <td>${item.contactName}</td>
+          <td>${item.contactNumber}</td>
+          <td>${item.email}</td>
+          <td><a href="${item.website}" target="_blank">${item.website}</a></td>
+          <td>
+            <button class="action-btn edit-btn" onclick="editEntry(${index})">Edit</button>
+            <button class="action-btn delete-btn" onclick="deleteEntry(${index})">Delete</button>
+          </td>
+        </tr>
+      `;
+      tableBody.insertAdjacentHTML('beforeend', row);
+    });
+  }
+
+  // Save data to localStorage
+  function saveToLocal() {
+    localStorage.setItem('companies', JSON.stringify(companies));
+  }
+
+  // Add or Update entry
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const newEntry = {
+      type: form.type.value,
+      city: form.city.value.trim(),
+      company: form.company.value.trim(),
+      contactName: form.contactName.value.trim(),
+      contactNumber: form.contactNumber.value.trim(),
+      email: form.email.value.trim(),
+      website: form.website.value.trim()
+    };
+
+    if (editIndex !== null) {
+      companies[editIndex] = newEntry;
+      editIndex = null;
+    } else {
+      companies.push(newEntry);
+    }
+
+    saveToLocal();
+    form.reset();
+    renderTable();
+  });
+
+  // Edit entry
+  window.editEntry = function(index) {
+    const c = companies[index];
+    form.type.value = c.type;
+    form.city.value = c.city;
+    form.company.value = c.company;
+    form.contactName.value = c.contactName;
+    form.contactNumber.value = c.contactNumber;
+    form.email.value = c.email;
+    form.website.value = c.website;
+    editIndex = index;
+  };
+
+  // Delete entry
+  window.deleteEntry = function(index) {
+    if (confirm("Are you sure you want to delete this entry?")) {
+      companies.splice(index, 1);
+      saveToLocal();
+      renderTable();
+    }
+  };
+
+  // Search by city, company, or type
+  searchInput.addEventListener('input', e => {
+    const val = e.target.value.toLowerCase();
+    const filtered = companies.filter(c =>
+      c.city.toLowerCase().includes(val) ||
+      c.company.toLowerCase().includes(val) ||
+      c.type.toLowerCase().includes(val)
+    );
+    renderTable(filtered);
+  });
+
+  // Sort A-Z toggle
+  let sortAsc = true;
+  sortBtn.addEventListener('click', () => {
+    companies.sort((a, b) => sortAsc
+      ? a.city.localeCompare(b.city)
+      : b.city.localeCompare(a.city)
+    );
+    sortAsc = !sortAsc;
+    sortBtn.textContent = sortAsc ? "Sort A-Z by City" : "Sort Z-A by City";
+    saveToLocal();
+    renderTable();
+  });
+
+  // Download JSON
+  saveBtn.addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify(companies, null, 2)], { type: "application/json" });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = "companies.json";
+    link.click();
+  });
+
+  // Initialize table on load
+  renderTable();
+</script>
+
+
+</body>
+</html>
