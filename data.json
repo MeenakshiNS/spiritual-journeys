@@ -1,0 +1,74 @@
+[
+  {
+    "type": "International",
+    "city": "Tokyo",
+    "company": "Nippon Tech Co.",
+    "contactName": "Akira Tanaka",
+    "contactNumber": "+81 45 234 5678",
+    "email": "akira.t@nippontech.jp",
+    "website": "https://www.nippontech.jp"
+  },
+  {
+    "type": "Domestic",
+    "city": "Chennai",
+    "company": "Southern Traders",
+    "contactName": "Priya Rajan",
+    "contactNumber": "9876543210",
+    "email": "priya@southerntraders.in",
+    "website": "https://www.southerntraders.in"
+  },
+  {
+    "type": "International",
+    "city": "Berlin",
+    "company": "Euro Supplies GmbH",
+    "contactName": "Hans Müller",
+    "contactNumber": "+49 30 99887766",
+    "email": "hans@eurosupplies.de",
+    "website": "https://www.eurosupplies.de"
+  },
+  {
+    "type": "Domestic",
+    "city": "kochi",
+    "company": "Maha Industrial Ltd.",
+    "contactName": "Rahul Desai",
+    "contactNumber": "9123456780",
+    "email": "rahul@mahaindustrial.com",
+    "website": "https://www.mahaindustrial.com"
+  },
+  {
+    "type": "International",
+    "city": "New York",
+    "company": "Global Parts Inc.",
+    "contactName": "John Carter",
+    "contactNumber": "+1 212 555 0198",
+    "email": "john@globalparts.com",
+    "website": "https://www.globalparts.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "Bangalore",
+    "company": "TechGrow Solutions",
+    "contactName": "Sneha Iyer",
+    "contactNumber": "9988776655",
+    "email": "sneha@techgrow.in",
+    "website": "https://www.techgrow.in"
+  },
+  {
+    "type": "International",
+    "city": "Singapore",
+    "company": "Pacific Traders Ltd.",
+    "contactName": "Lian Tan",
+    "contactNumber": "+65 6789 1122",
+    "email": "lian@pacifictraders.sg",
+    "website": "https://www.pacifictraders.sg"
+  },
+  {
+    "type": "Domestic",
+    "city": "Kochi",
+    "company": "Sealine Exports",
+    "contactName": "Anoop Nair",
+    "contactNumber": "9847098470",
+    "email": "anoop@sealineexports.in",
+    "website": "https://www.sealineexports.in"
+  }
+]

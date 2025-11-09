@@ -7,355 +7,301 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 10px;
-      padding: 30px;
+      margin: 20px;
       background: #f9fafb;
     }
     h1 {
       text-align: center;
-      margin-bottom: 20px;
-    }
-    .controls {
-      margin-bottom: 20px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    input, button, select {
-      padding: 10px;
-      font-size: 14px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    #search {
-      flex-grow: 1;
-      max-width: 400px;
-    }
-
-    .table-container {
-      overflow-x: auto;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      background: white;
+      font-size: 1.8rem;
       margin-bottom: 20px;
     }
     table {
       width: 100%;
-      min-width: 800px;
       border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
     }
     th, td {
-      padding: 12px;
-      border: 1px solid #ddd;
+      padding: 10px;
       text-align: left;
-      white-space: nowrap;
       font-size: 14px;
     }
-    th {
-      background: #f3f4f6;
-      font-weight: bold;
-    }
-
-    form {
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 10px;
-      padding: 15px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-    form button[type="submit"] {
-      grid-column: 1 / -1;
-      background: #10b981;
-      color: white;
-      cursor: pointer;
-      border: none;
-      padding: 10px;
-    }
-    #saveBtn {
-      margin: 15px auto 0;
-      display: block;
-      background: #f59e0b;
-      color: white;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      max-width: 200px;
-    }
-    .action-btn {
-      cursor: pointer;
-      padding: 4px 8px;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      margin: 2px;
-      font-size: 12px;
-    }
-    .edit-btn {
-      background: #2563eb;
-    }
-    .delete-btn {
-      background: #dc2626;
-    }
-
-    .json-editor-container {
-      margin-top: 30px;
-      padding: 15px;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-    #jsonEditor {
-      width: 100%;
-      min-height: 200px;
-      font-family: 'Consolas', 'Monaco', monospace;
-      font-size: 13px;
-      border: 1px solid #ccc;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    .json-editor-controls {
+    .controls {
       display: flex;
-      gap: 10px;
-      margin-top: 10px;
+      justify-content: space-between;
       flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
     }
-    .json-editor-controls button {
-      flex-grow: 1;
+    input, select, button {
+      padding: 8px 12px;
+      font-size: 14px;
     }
-    #loadJsonBtn {
-      background: #059669;
+    button {
+      cursor: pointer;
+      background-color: #007bff;
       color: white;
+      border: none;
+      border-radius: 4px;
     }
-    #updateEditorBtn {
-      background: #f97316;
-      color: white;
+    button:hover {
+      background-color: #0056b3;
+    }
+    td input, td select {
+      width: 100%;
+      border: none;
+      background: transparent;
+      pointer-events: none;
+    }
+    tr.editing td input, tr.editing td select {
+      background: #fff;
+      border: 1px solid #ccc;
+      pointer-events: auto;
     }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 15px;
-        margin: 0;
+    /* ✅ Responsive Design */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead {
+        display: none;
+      }
+      tr {
+        margin-bottom: 15px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+      }
+      td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+      }
+      td:last-child {
+        border-bottom: none;
+      }
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #333;
       }
       .controls {
         flex-direction: column;
         align-items: stretch;
       }
-      #search {
-        max-width: 100%;
+      .controls div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
       }
-      form {
-        grid-template-columns: 1fr;
-      }
-      th, td {
-        padding: 8px;
+      input, select, button {
+        width: 100%;
       }
     }
   </style>
 </head>
 <body>
-
-  <h1>📦 Supplier Details</h1>
+  <h1>Supplier Details</h1>
 
   <div class="controls">
-    <input type="text" id="search" placeholder="Search by city, company or type...">
-    <button id="sortBtn">Sort A-Z by City</button>
-  </div>
-
-  <div class="table-container">
-    <table id="companyTable">
-      <thead>
-        <tr>
-          <th>SI No</th>
-          <th>Type</th>
-          <th>City</th>
-          <th>Company Name</th>
-          <th>Contact Name</th>
-          <th>Contact Number</th>
-          <th>Email ID</th>
-          <th>Website</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody id="tableBody"></tbody>
-    </table>
-  </div>
-
-  <h2>Add/Update Supplier</h2>
-  <form id="addForm">
-    <select id="type" required>
-      <option value="" disabled selected>Select Type</option>
-      <option value="Domestic">Domestic</option>
-      <option value="International">International</option>
-    </select>
-    <input type="text" id="city" placeholder="City" required>
-    <input type="text" id="company" placeholder="Company Name" required>
-    <input type="text" id="contactName" placeholder="Contact Name" required>
-    <input type="text" id="contactNumber" placeholder="Contact Number" required>
-    <input type="email" id="email" placeholder="Email ID" required>
-    <input type="text" id="website" placeholder="Website" required>
-    <button type="submit">Add / Update Entry</button>
-  </form>
-
-  <div class="json-editor-container">
-    <h2>JSON Data Editor (For bulk editing/loading)</h2>
-    <textarea id="jsonEditor"></textarea>
-    <div class="json-editor-controls">
-      <button id="updateEditorBtn">📝 Load Current Data to Editor</button>
-      <button id="loadJsonBtn">📤 Save JSON from Editor to Table</button>
+    <div>
+      <input type="text" id="searchInput" placeholder="Search by type, city, or company..." />
+      <button id="sortCompanyBtn">Sort by Company</button>
+      <button id="sortCityBtn">Sort by City</button>
+    </div>
+    <div>
+      <button id="addBtn">➕ Add Supplier</button>
+      <button id="saveBtn">💾 Save All Changes</button>
     </div>
   </div>
 
-  <button id="saveBtn">💾 Download JSON File</button>
+  <table id="supplierTable">
+    <thead>
+      <tr>
+        <th>SI No</th>
+        <th>Type</th>
+        <th>City</th>
+        <th>Company Name</th>
+        <th>Contact Name</th>
+        <th>Contact Number</th>
+        <th>Email ID</th>
+        <th>Website</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
   <script>
-    // const initialData = [
-    //   { type: "Domestic", city: "Mumbai", company: "India Steel Co.", contactName: "Rajesh K.", contactNumber: "9876543210", email: "rajesh@indiasteel.in", website: "http://indiasteel.in" },
-    //   { type: "International", city: "Berlin", company: "EuroParts GmbH", contactName: "Lena Schmidt", contactNumber: "+49301234567", email: "lena@europarts.de", website: "http://europarts.com" },
-    //   { type: "Domestic", city: "Delhi", company: "Capital Chem Ltd.", contactName: "Priya Sharma", contactNumber: "9000111222", email: "priya@capitalchem.in", website: "http://capitalchem.in" }
-    // ];
+    let companies = [];
 
-    let companies = JSON.parse(localStorage.getItem('companies')) || initialData;
-    let editIndex = null;
+    // ✅ Load data and sort alphabetically by city (case-insensitive)
+    async function loadData() {
+      const res = await fetch('/data');
+      companies = await res.json();
 
-    const tableBody = document.getElementById('tableBody');
-    const searchInput = document.getElementById('search');
-    const sortBtn = document.getElementById('sortBtn');
-    const form = document.getElementById('addForm');
-    const saveBtn = document.getElementById('saveBtn');
-    const jsonEditor = document.getElementById('jsonEditor');
-    const loadJsonBtn = document.getElementById('loadJsonBtn');
-    const updateEditorBtn = document.getElementById('updateEditorBtn');
+      // Sort by city name (case-insensitive)
+      companies.sort((a, b) => a.city.toLowerCase().localeCompare(b.city.toLowerCase()));
 
-    function renderTable(data = companies) {
-      tableBody.innerHTML = "";
+      renderTable(companies);
+    }
+
+    function renderTable(data) {
+      const tbody = document.querySelector('#supplierTable tbody');
+      tbody.innerHTML = '';
       data.forEach((item, index) => {
-        const originalIndex = companies.indexOf(item);
-        const row = `
-          <tr>
-            <td>${index + 1}</td>
-            <td>${item.type}</td>
-            <td>${item.city}</td>
-            <td>${item.company}</td>
-            <td>${item.contactName}</td>
-            <td>${item.contactNumber}</td>
-            <td>${item.email}</td>
-            <td><a href="${item.website}" target="_blank">${item.website}</a></td>
-            <td>
-              <button class="action-btn edit-btn" onclick="editEntry(${originalIndex})">Edit</button>
-              <button class="action-btn delete-btn" onclick="deleteEntry(${originalIndex})">Delete</button>
-            </td>
-          </tr>`;
-        tableBody.insertAdjacentHTML('beforeend', row);
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td data-label="SI No">${index + 1}</td>
+          <td data-label="Type">
+            <select>
+              <option value="Domestic" ${item.type === "Domestic" ? "selected" : ""}>Domestic</option>
+              <option value="International" ${item.type === "International" ? "selected" : ""}>International</option>
+            </select>
+          </td>
+          <td data-label="City"><input value="${item.city || ''}" /></td>
+          <td data-label="Company"><input value="${item.company || ''}" /></td>
+          <td data-label="Contact Name"><input value="${item.contactName || ''}" /></td>
+          <td data-label="Contact Number">
+            <a href="tel:${item.contactNumber || ''}" style="color:#007bff;text-decoration:none;">
+              ${item.contactNumber || ''}
+            </a>
+          </td>
+          <td data-label="Email">
+            <a href="mailto:${item.email || ''}" style="color:#007bff;text-decoration:none;">
+              ${item.email || ''}
+            </a>
+          </td>
+          <td data-label="Website">
+            <a href="${item.website?.startsWith('http') ? item.website : 'https://' + item.website}" target="_blank" style="color:#007bff;text-decoration:none;">
+              ${item.website || ''}
+            </a>
+          </td>
+          <td data-label="Actions">
+            <button onclick="toggleEdit(${index}, this)">✏️ Edit</button>
+            <button onclick="deleteRow(${index})">🗑️ Delete</button>
+          </td>
+        `;
+        tbody.appendChild(row);
       });
     }
 
-    function saveToLocal() {
-      localStorage.setItem('companies', JSON.stringify(companies));
+    function toggleEdit(index, btn) {
+      const row = btn.closest('tr');
+      const isEditing = row.classList.toggle('editing');
+      const tds = row.querySelectorAll('td');
+
+      if (isEditing) {
+        btn.textContent = '💾 Save';
+        const item = companies[index];
+        tds[5].innerHTML = `<input value="${item.contactNumber || ''}" />`;
+        tds[6].innerHTML = `<input value="${item.email || ''}" />`;
+        tds[7].innerHTML = `<input value="${item.website || ''}" />`;
+      } else {
+        btn.textContent = '✏️ Edit';
+        const cells = row.querySelectorAll('input, select');
+        const updated = {
+          type: cells[0].value,
+          city: cells[1].value,
+          company: cells[2].value,
+          contactName: cells[3].value,
+          contactNumber: cells[4].value,
+          email: cells[5].value,
+          website: cells[6].value
+        };
+        companies[index] = updated;
+
+        // Re-sort after edit to maintain alphabetical order
+        companies.sort((a, b) => a.city.toLowerCase().localeCompare(b.city.toLowerCase()));
+
+        renderTable(companies);
+      }
     }
 
-    loadJsonBtn.addEventListener('click', () => {
-      try {
-        const newCompanies = JSON.parse(jsonEditor.value);
-        if (Array.isArray(newCompanies)) {
-          companies = newCompanies;
-          saveToLocal();
-          renderTable();
-          alert('✅ Successfully loaded and saved new data from JSON Editor!');
-        } else {
-          throw new Error('JSON is not a valid array.');
-        }
-      } catch (e) {
-        alert('❌ ERROR: Invalid JSON format. ' + e.message);
-      }
-    });
-
-    updateEditorBtn.addEventListener('click', () => {
-      jsonEditor.value = JSON.stringify(companies, null, 2);
-    });
-
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const newEntry = {
-        type: form.type.value,
-        city: form.city.value.trim(),
-        company: form.company.value.trim(),
-        contactName: form.contactName.value.trim(),
-        contactNumber: form.contactNumber.value.trim(),
-        email: form.email.value.trim(),
-        website: form.website.value.trim()
-      };
-
-      if (editIndex !== null) {
-        companies[editIndex] = newEntry;
-        editIndex = null;
-        form.querySelector('button[type="submit"]').textContent = "Add / Update Entry";
-      } else {
-        companies.push(newEntry);
-      }
-
-      saveToLocal();
-      form.reset();
-      renderTable();
-    });
-
-    window.editEntry = function(index) {
-      const c = companies[index];
-      if (!c) return;
-      form.type.value = c.type;
-      form.city.value = c.city;
-      form.company.value = c.company;
-      form.contactName.value = c.contactName;
-      form.contactNumber.value = c.contactNumber;
-      form.email.value = c.email;
-      form.website.value = c.website;
-      editIndex = index;
-      form.querySelector('button[type="submit"]').textContent = "Update Entry";
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    };
-
-    window.deleteEntry = function(index) {
-      if (confirm("Are you sure you want to delete this entry?")) {
+    function deleteRow(index) {
+      if (confirm("Are you sure you want to delete this supplier?")) {
         companies.splice(index, 1);
-        saveToLocal();
-        renderTable();
+        renderTable(companies);
       }
-    };
+    }
 
-    searchInput.addEventListener('input', e => {
-      const val = e.target.value.toLowerCase();
+    document.getElementById('addBtn').addEventListener('click', () => {
+      companies.push({
+        type: "Domestic",
+        city: '',
+        company: '',
+        contactName: '',
+        contactNumber: '',
+        email: '',
+        website: ''
+      });
+
+      // Keep the list sorted even after adding
+      companies.sort((a, b) => a.city.toLowerCase().localeCompare(b.city.toLowerCase()));
+
+      renderTable(companies);
+    });
+
+    // Sorting toggles
+    let cityAsc = true;
+    let companyAsc = true;
+
+    document.getElementById('sortCompanyBtn').addEventListener('click', () => {
+      companies.sort((a, b) =>
+        companyAsc
+          ? a.company.toLowerCase().localeCompare(b.company.toLowerCase())
+          : b.company.toLowerCase().localeCompare(a.company.toLowerCase())
+      );
+      companyAsc = !companyAsc;
+      renderTable(companies);
+    });
+
+    document.getElementById('sortCityBtn').addEventListener('click', () => {
+      companies.sort((a, b) =>
+        cityAsc
+          ? a.city.toLowerCase().localeCompare(b.city.toLowerCase())
+          : b.city.toLowerCase().localeCompare(a.city.toLowerCase())
+      );
+      cityAsc = !cityAsc;
+      renderTable(companies);
+    });
+
+    // Search
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const keyword = e.target.value.toLowerCase();
       const filtered = companies.filter(c =>
-        c.city.toLowerCase().includes(val) ||
-        c.company.toLowerCase().includes(val) ||
-        c.type.toLowerCase().includes(val)
+        c.type.toLowerCase().includes(keyword) ||
+        c.city.toLowerCase().includes(keyword) ||
+        c.company.toLowerCase().includes(keyword)
       );
       renderTable(filtered);
     });
 
-    let sortAsc = true;
-    sortBtn.addEventListener('click', () => {
-      companies.sort((a, b) =>
-        sortAsc ? a.city.localeCompare(b.city) : b.city.localeCompare(a.city)
-      );
-      sortAsc = !sortAsc;
-      sortBtn.textContent = sortAsc ? "Sort A-Z by City" : "Sort Z-A by City";
-      saveToLocal();
-      renderTable();
+    // Save to JSON file
+    document.getElementById('saveBtn').addEventListener('click', async () => {
+      try {
+        const res = await fetch('/data', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(companies, null, 2)
+        });
+        if (!res.ok) throw new Error('Failed to save');
+        alert('✅ All data saved successfully!');
+      } catch (err) {
+        alert('❌ Error saving data.');
+        console.error(err);
+      }
     });
 
-    saveBtn.addEventListener('click', () => {
-      const blob = new Blob([JSON.stringify(companies, null, 2)], { type: "application/json" });
-      const link = document.createElement('a');
-      link.href = URL.createObjectURL(blob);
-      link.download = "supplier_details.json";
-      link.click();
-    });
-
-    renderTable();
-    updateEditorBtn.click();
+    // Load everything on start
+    loadData();
   </script>
-
 </body>
 </html>
