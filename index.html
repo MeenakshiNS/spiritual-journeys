@@ -19,6 +19,7 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 15px;
+      table-layout: fixed; /* ✅ Needed for manual resizing */
     }
     table, th, td {
       border: 1px solid #ccc;
@@ -27,7 +28,24 @@
       padding: 10px;
       text-align: left;
       font-size: 14px;
+      position: relative; /* ✅ For resizer positioning */
     }
+
+    /* ✅ Resizer handle */
+    .resizer {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 5px;
+      cursor: col-resize;
+      user-select: none;
+      height: 100%;
+      z-index: 1;
+    }
+    .resizer:hover, .resizing {
+      border-right: 2px solid #007bff;
+    }
+
     .controls {
       display: flex;
       justify-content: space-between;
@@ -122,22 +140,24 @@
     </div>
   </div>
 
-  <table id="supplierTable">
-    <thead>
-      <tr>
-        <th>SI No</th>
-        <th>Type</th>
-        <th>City</th>
-        <th>Company Name</th>
-        <th>Contact Name</th>
-        <th>Contact Number</th>
-        <th>Email ID</th>
-        <th>Website</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+  <div style="overflow-x:auto;">
+    <table id="supplierTable">
+      <thead>
+        <tr>
+          <th>SI No</th>
+          <th>Type</th>
+          <th>City</th>
+          <th>Company Name</th>
+          <th>Contact Name</th>
+          <th>Contact Number</th>
+          <th>Email ID</th>
+          <th>Website</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
   <script>
     let companies = [];
@@ -146,10 +166,7 @@
     async function loadData() {
       const res = await fetch('/data');
       companies = await res.json();
-
-      // Sort by city name (case-insensitive)
       companies.sort((a, b) => a.city.toLowerCase().localeCompare(b.city.toLowerCase()));
-
       renderTable(companies);
     }
 
@@ -191,6 +208,8 @@
         `;
         tbody.appendChild(row);
       });
+
+      enableColumnResizing(document.getElementById('supplierTable')); // ✅ Reapply resizers
     }
 
     function toggleEdit(index, btn) {
@@ -217,10 +236,7 @@
           website: cells[6].value
         };
         companies[index] = updated;
-
-        // Re-sort after edit to maintain alphabetical order
         companies.sort((a, b) => a.city.toLowerCase().localeCompare(b.city.toLowerCase()));
-
         renderTable(companies);
       }
     }
@@ -242,10 +258,7 @@
         email: '',
         website: ''
       });
-
-      // Keep the list sorted even after adding
       companies.sort((a, b) => a.city.toLowerCase().localeCompare(b.city.toLowerCase()));
-
       renderTable(companies);
     });
 
@@ -299,6 +312,39 @@
         console.error(err);
       }
     });
+
+    // ✅ Column resizing logic
+    function enableColumnResizing(table) {
+      const ths = table.querySelectorAll('th');
+      ths.forEach(th => {
+        if (th.querySelector('.resizer')) return;
+        const resizer = document.createElement('div');
+        resizer.classList.add('resizer');
+        th.appendChild(resizer);
+
+        let startX, startWidth;
+
+        resizer.addEventListener('mousedown', (e) => {
+          startX = e.pageX;
+          startWidth = th.offsetWidth;
+          th.classList.add('resizing');
+
+          const onMouseMove = (e) => {
+            const newWidth = startWidth + (e.pageX - startX);
+            th.style.width = newWidth + 'px';
+          };
+
+          const onMouseUp = () => {
+            th.classList.remove('resizing');
+            document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('mouseup', onMouseUp);
+          };
+
+          document.addEventListener('mousemove', onMouseMove);
+          document.addEventListener('mouseup', onMouseUp);
+        });
+      });
+    }
 
     // Load everything on start
     loadData();
