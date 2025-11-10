@@ -1,5 +1,139 @@
 [
- 
+  {
+    "type": "Domestic",
+    "city": "ANDAMAN",
+    "company": "VISIT 2 ANDAMAN",
+    "contactName": "SHIVJI BABU",
+    "contactNumber": "8001855500, 9933729557",
+    "email": "visit2andamans@gmail.com",
+    "website": "www.visit2andaman.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "ANDAMAN",
+    "company": "GAME FISHING",
+    "contactName": "MR DHARA SHEKAR",
+    "contactNumber": "7999438388",
+    "email": "captain.jackgamefishing@gmail.com",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
+    "city": "ANDAMAN",
+    "company": "ANDAMAN TRAVEL EXPRESS",
+    "contactName": "SIMSON",
+    "contactNumber": "9933254263, 9476073101, 7001404001",
+    "email": "andamantravell@gmail.com, info@andamantravelexpress@gmail.com",
+    "website": "www.andamantravelexpress.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "ANDAMAN",
+    "company": "ANDAMAN STARGAZING",
+    "contactName": "UDHAY BHASKER",
+    "contactNumber": "9932085079",
+    "email": "",
+    "website": "www.andamanstargazing.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "ANDAMAN",
+    "company": "RARA MAKRUZZ",
+    "contactName": "DEEPAK VERMA",
+    "contactNumber": "9810305041",
+    "email": "deepak.verma@makruzz.com",
+    "website": "www.makruzz.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "ANDAMAN & NICOBAR",
+    "company": "GREEN OCEAN SEAWAYS PVT LTD",
+    "contactName": "",
+    "contactNumber": "9932080959, 9932080768, 03192230977",
+    "email": "info@greenocean.cruise.com",
+    "website": "www.greenoceanseaways.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "BANGLORE",
+    "company": "TRAVEL & TOURISM ACADEMY",
+    "contactName": "KEERTHANA BABU",
+    "contactNumber": "9043791866",
+    "email": "info@ttaworld.in",
+    "website": "www.ttaworld.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "BANGLORE COCHIN",
+    "company": "LIVE THE DAY HOLIDAYS",
+    "contactName": "MALAVIKA K. NAIR",
+    "contactNumber": "9744052777",
+    "email": "work.liveday@gmail.com",
+    "website": "www.livetheday.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "BANGLORE DELHI AGRA DRYABAD GOA",
+    "company": "ULLASSA",
+    "contactName": "RITESH SAXENA",
+    "contactNumber": "809574702",
+    "email": "ritesh@houseofullassa.com",
+    "website": "houseofullassa.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "BENGALURU",
+    "company": "CROWN INN A BOUTIQUE HOTEL",
+    "contactName": "",
+    "contactNumber": "8123504921",
+    "email": "royalresidencycr@gmail.com",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
+    "city": "CHENNAI",
+    "company": "INFO LEISURE HOLIDAYS",
+    "contactName": "THAJDHEENS",
+    "contactNumber": "8891227333, 8138017733",
+    "email": "chennai.leisure@gmail.com, info@leisure.in",
+    "website": "www.leisure.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "CHENNAI",
+    "company": "CONSULATE GENERAL OF MALAYSIA",
+    "contactName": "SHAHMIN MUZIN BIN TAN",
+    "contactNumber": "9841443080, 9370005565",
+    "email": "shahmin@malaysia.travel, booking@igtourtimes.in",
+    "website": "www.malaysia.travel, www.igtourtimes.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "COCHIN",
+    "company": "APOORVA TRAVELS",
+    "contactName": "JALLY J AUGUSTINE",
+    "contactNumber": "8197564267",
+    "email": "jally@apoorvatravels.com",
+    "website": "www.apoorvatravels.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "COCHIN",
+    "company": "GREHASOFT",
+    "contactName": "RAJ T SKARIA K A",
+    "contactNumber": "8921540183",
+    "email": "info@grehasoft.com, grehasoft@gmail.com",
+    "website": "www.grehasoft.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "COCHIN (KAKKANAD)",
+    "company": "VIE ROOTS",
+    "contactName": "DEVIKA VENUGOPAL",
+    "contactNumber": "9778415151",
+    "email": "devika.venugopal@vierootr.com",
+    "website": "www.vieroot.com"
+  },
   {
     "type": "Domestic",
     "city": "DELHI",
@@ -74,15 +208,6 @@
   },
   {
     "type": "Domestic",
-    "city": "DELHI BANGALORE",
-    "company": "INDIAN CIRCUIT HOLIDAYS",
-    "contactName": "MR SANJAY SINGH",
-    "contactNumber": "9810325955, 01204315973",
-    "email": "info@indiancircuit.com, sanjay@indiancircuit.com",
-    "website": "www.indiancircuit.com"
-  },
-  {
-    "type": "Domestic",
     "city": "DELHI",
     "company": "INDIAN PASSAGE",
     "contactName": "MR MANIK DAS",
@@ -107,6 +232,78 @@
     "contactNumber": "7870079770",
     "email": "kashish@houseofullassa.com",
     "website": "www.houseofullassa.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "DELHI BANGALORE",
+    "company": "INDIAN CIRCUIT HOLIDAYS",
+    "contactName": "MR SANJAY SINGH",
+    "contactNumber": "9810325955, 01204315973",
+    "email": "info@indiancircuit.com, sanjay@indiancircuit.com",
+    "website": "www.indiancircuit.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "ERNAKULAM",
+    "company": "BENNY'S",
+    "contactName": "THAFZIYA K A",
+    "contactNumber": "8138999425",
+    "email": "thafziya@bennyroyaltours.com",
+    "website": "www.bennyroyaltours.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "ERNAKULAM (ADUVASSERY)",
+    "company": "HOPE TOURS AND TRAVELS",
+    "contactName": "ALI JAIM",
+    "contactNumber": "7736097454",
+    "email": "info@thehopetours.com",
+    "website": "www.thehopetours.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "GURUGRAM",
+    "company": "EIGHT CONTINENTS HOTELS & RESORTS",
+    "contactName": "ABDUL MOORTHY",
+    "contactNumber": "7888800888",
+    "email": "sales.bengaluru@eightcontinents.co.uk",
+    "website": "www.eightcontinentshotels.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "KOCHI",
+    "company": "FLY MALABAR",
+    "contactName": "FAROOG EBRAHIM",
+    "contactNumber": "8153808233, 9445674642",
+    "email": "ebrgim@flymalabar.com",
+    "website": "www.flymalabar.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "KOCHI",
+    "company": "KINGS INTERNATIONAL",
+    "contactName": "BALA GOPAL VELIATH",
+    "contactNumber": "9747733339",
+    "email": "balagopal@kingsgopal.co.in",
+    "website": "www.kingsintl.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "KOCHI",
+    "company": "TRIUM MARKETING & CONSULTANTS (P) LTD",
+    "contactName": "ABHAY KUMAR P K",
+    "contactNumber": "04842376663, 9349122457",
+    "email": "abhay@triumindia.in",
+    "website": "www.triumindia.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "MADURAI",
+    "company": "IGC TOUR TIMES",
+    "contactName": "RENGA RAJ",
+    "contactNumber": "9488811525",
+    "email": "",
+    "website": ""
   },
   {
     "type": "Domestic",
@@ -173,75 +370,66 @@
   },
   {
     "type": "Domestic",
-    "city": "BANGLORE COCHIN",
-    "company": "LIVE THE DAY HOLIDAYS",
-    "contactName": "MALAVIKA K. NAIR",
-    "contactNumber": "9744052777",
-    "email": "work.liveday@gmail.com",
-    "website": "www.livetheday.in"
-  },
-  {
-    "type": "Domestic",
-    "city": "BANGLORE",
-    "company": "TRAVEL & TOURISM ACADEMY",
-    "contactName": "KEERTHANA BABU",
-    "contactNumber": "9043791866",
-    "email": "info@ttaworld.in",
-    "website": "www.ttaworld.in"
-  },
-  {
-    "type": "Domestic",
-    "city": "BANGLORE DELHI AGRA DRYABAD GOA",
-    "company": "ULLASSA",
-    "contactName": "RITESH SAXENA",
-    "contactNumber": "809574702",
-    "email": "ritesh@houseofullassa.com",
-    "website": "houseofullassa.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "GURUGRAM",
-    "company": "EIGHT CONTINENTS HOTELS & RESORTS",
-    "contactName": "ABDUL MOORTHY",
-    "contactNumber": "7888800888",
-    "email": "sales.bengaluru@eightcontinents.co.uk",
-    "website": "www.eightcontinentshotels.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "BENGALURU",
-    "company": "CROWN INN A BOUTIQUE HOTEL",
+    "city": "NEDUMBASSERY AIRPORT ROAD, ADUVASSERY",
+    "company": "HOPE TOURS AND TRAVELS",
     "contactName": "",
-    "contactNumber": "8123504921",
-    "email": "royalresidencycr@gmail.com",
-    "website": ""
+    "contactNumber": "8111925661, 6842925661",
+    "email": "hopetravelpartner@gmail.com",
+    "website": "www.thehopetours.com"
   },
   {
     "type": "Domestic",
-    "city": "CHENNAI",
-    "company": "INFO LEISURE HOLIDAYS",
-    "contactName": "THAJDHEENS",
-    "contactNumber": "8891227333, 8138017733",
-    "email": "chennai.leisure@gmail.com, info@leisure.in",
-    "website": "www.leisure.in"
+    "city": "NOIDA UP",
+    "company": "HIGH Q TOURISM",
+    "contactName": "BOD CO ANTONY RAJ",
+    "contactNumber": "9860079094",
+    "email": "bodco@highqtourism.com",
+    "website": "www.highqtourism.com"
   },
   {
     "type": "Domestic",
-    "city": "CHENNAI",
-    "company": "CONSULATE GENERAL OF MALAYSIA",
-    "contactName": "SHAHMIN MUZIN BIN TAN",
-    "contactNumber": "9841443080, 9370005565",
-    "email": "shahmin@malaysia.travel, booking@igtourtimes.in",
-    "website": "www.malaysia.travel, www.igtourtimes.in"
+    "city": "SOUTH ANDAMAN",
+    "company": "GO 2 ANDAMAN",
+    "contactName": "AMIT KUMAR",
+    "contactNumber": "9775278555, 9933285975",
+    "email": "amitkumar197620@gmail.com",
+    "website": "www.go2andaman.in"
   },
   {
     "type": "Domestic",
-    "city": "MADURAI",
-    "company": "IGC TOUR TIMES",
-    "contactName": "RENGA RAJ",
-    "contactNumber": "9488811525",
-    "email": "",
-    "website": ""
+    "city": "THAMMANAM (ERNAKULAM)",
+    "company": "POWER PAUL KLICK MEDIA",
+    "contactName": "JOBIN PAUL",
+    "contactNumber": "9544664831",
+    "email": "jobinpaul@powerklickmedia.com",
+    "website": "www.powerklickmedia.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "Tirupati (AP)",
+    "company": "SLV TOURS AND TRAVLS (OPC) PRIVATE LIMITED",
+    "contactName": "LAKSHMI PRASANNA",
+    "contactNumber": "8520999318 , 7799330349",
+    "email": "sales5@slvtoursandtravels.com , slvtravels26@gmail.com",
+    "website": "www.slvtoursandtravels.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "UP (VARANASI)",
+    "company": "JATAK TRAVELS",
+    "contactName": "SUSHIL KUMAR SINGH",
+    "contactNumber": "9935028455, 8299134672",
+    "email": "md@jataktravel.com",
+    "website": "www.jataktravel.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "UP, BIHAR",
+    "company": "ETERNAL INDIA",
+    "contactName": "KAUSHAL SINGH",
+    "contactNumber": "7902489774",
+    "email": "varanasi@eternalindia.com",
+    "website": "www.eternalindia.com"
   },
   {
     "type": "Domestic",
@@ -251,15 +439,6 @@
     "contactNumber": "9336188442, 9839333692",
     "email": "nakshatra.varanasi@yahoo.co.in",
     "website": "www.nakshatratravel.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "VARANASI UP",
-    "company": "TRAVEL SAMA-GAM",
-    "contactName": "SHIVAM KESERWANI",
-    "contactNumber": "9754097337, 911523450",
-    "email": "info@prayagsamagam.com",
-    "website": "prayagsamagam.com, mahakumbh.com"
   },
   {
     "type": "Domestic",
@@ -308,182 +487,11 @@
   },
   {
     "type": "Domestic",
-    "city": "NOIDA UP",
-    "company": "HIGH Q TOURISM",
-    "contactName": "BOD CO ANTONY RAJ",
-    "contactNumber": "9860079094",
-    "email": "bodco@highqtourism.com",
-    "website": "www.highqtourism.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "UP (VARANASI)",
-    "company": "JATAK TRAVELS",
-    "contactName": "SUSHIL KUMAR SINGH",
-    "contactNumber": "9935028455, 8299134672",
-    "email": "md@jataktravel.com",
-    "website": "www.jataktravel.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "UP, BIHAR",
-    "company": "ETERNAL INDIA",
-    "contactName": "KAUSHAL SINGH",
-    "contactNumber": "7902489774",
-    "email": "varanasi@eternalindia.com",
-    "website": "www.eternalindia.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "COCHIN",
-    "company": "APOORVA TRAVELS",
-    "contactName": "JALLY J AUGUSTINE",
-    "contactNumber": "8197564267",
-    "email": "jally@apoorvatravels.com",
-    "website": "www.apoorvatravels.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "COCHIN",
-    "company": "GREHASOFT",
-    "contactName": "RAJ T SKARIA K A",
-    "contactNumber": "8921540183",
-    "email": "info@grehasoft.com, grehasoft@gmail.com",
-    "website": "www.grehasoft.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "ERNAKULAM",
-    "company": "BENNY'S",
-    "contactName": "THAFZIYA K A",
-    "contactNumber": "8138999425",
-    "email": "thafziya@bennyroyaltours.com",
-    "website": "www.bennyroyaltours.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "THAMMANAM (ERNAKULAM)",
-    "company": "POWER PAUL KLICK MEDIA",
-    "contactName": "JOBIN PAUL",
-    "contactNumber": "9544664831",
-    "email": "jobinpaul@powerklickmedia.com",
-    "website": "www.powerklickmedia.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "KOCHI",
-    "company": "FLY MALABAR",
-    "contactName": "FAROOG EBRAHIM",
-    "contactNumber": "8153808233, 9445674642",
-    "email": "ebrgim@flymalabar.com",
-    "website": "www.flymalabar.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "KOCHI",
-    "company": "KINGS INTERNATIONAL",
-    "contactName": "BALA GOPAL VELIATH",
-    "contactNumber": "9747733339",
-    "email": "balagopal@kingsgopal.co.in",
-    "website": "www.kingsintl.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "ERNAKULAM (ADUVASSERY)",
-    "company": "HOPE TOURS AND TRAVELS",
-    "contactName": "ALI JAIM",
-    "contactNumber": "7736097454",
-    "email": "info@thehopetours.com",
-    "website": "www.thehopetours.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "NEDUMBASSERY AIRPORT ROAD, ADUVASSERY",
-    "company": "HOPE TOURS AND TRAVELS",
-    "contactName": "",
-    "contactNumber": "8111925661, 6842925661",
-    "email": "hopetravelpartner@gmail.com",
-    "website": "www.thehopetours.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "COCHIN (KAKKANAD)",
-    "company": "VIE ROOTS",
-    "contactName": "DEVIKA VENUGOPAL",
-    "contactNumber": "9778415151",
-    "email": "devika.venugopal@vierootr.com",
-    "website": "www.vieroot.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "KOCHI",
-    "company": "TRIUM MARKETING & CONSULTANTS (P) LTD",
-    "contactName": "ABHAY KUMAR P K",
-    "contactNumber": "04842376663, 9349122457",
-    "email": "abhay@triumindia.in",
-    "website": "www.triumindia.in"
-  },
-  {
-    "type": "Domestic",
-    "city": "ANDAMAN",
-    "company": "VISIT 2 ANDAMAN",
-    "contactName": "SHIVJI BABU",
-    "contactNumber": "8001855500, 9933729557",
-    "email": "visit2andamans@gmail.com",
-    "website": "www.visit2andaman.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "SOUTH ANDAMAN",
-    "company": "GO 2 ANDAMAN",
-    "contactName": "AMIT KUMAR",
-    "contactNumber": "9775278555, 9933285975",
-    "email": "amitkumar197620@gmail.com",
-    "website": "www.go2andaman.in"
-  },
-  {
-    "type": "Domestic",
-    "city": "ANDAMAN",
-    "company": "GAME FISHING",
-    "contactName": "MR DHARA SHEKAR",
-    "contactNumber": "7999438388",
-    "email": "captain.jackgamefishing@gmail.com",
-    "website": ""
-  },
-  {
-    "type": "Domestic",
-    "city": "ANDAMAN",
-    "company": "ANDAMAN TRAVEL EXPRESS",
-    "contactName": "SIMSON",
-    "contactNumber": "9933254263, 9476073101, 7001404001",
-    "email": "andamantravell@gmail.com, info@andamantravelexpress@gmail.com",
-    "website": "www.andamantravelexpress.in"
-  },
-  {
-    "type": "Domestic",
-    "city": "ANDAMAN & NICOBAR",
-    "company": "GREEN OCEAN SEAWAYS PVT LTD",
-    "contactName": "",
-    "contactNumber": "9932080959, 9932080768, 03192230977",
-    "email": "info@greenocean.cruise.com",
-    "website": "www.greenoceanseaways.com"
-  },
-  {
-    "type": "Domestic",
-    "city": "ANDAMAN",
-    "company": "ANDAMAN STARGAZING",
-    "contactName": "UDHAY BHASKER",
-    "contactNumber": "9932085079",
-    "email": "",
-    "website": "www.andamanstargazing.in"
-  },
-  {
-    "type": "Domestic",
-    "city": "ANDAMAN",
-    "company": "RARA MAKRUZZ",
-    "contactName": "DEEPAK VERMA",
-    "contactNumber": "9810305041",
-    "email": "deepak.verma@makruzz.com",
-    "website": "www.makruzz.com"
+    "city": "VARANASI UP",
+    "company": "TRAVEL SAMA-GAM",
+    "contactName": "SHIVAM KESERWANI",
+    "contactNumber": "9754097337, 911523450",
+    "email": "info@prayagsamagam.com",
+    "website": "prayagsamagam.com, mahakumbh.com"
   }
 ]
