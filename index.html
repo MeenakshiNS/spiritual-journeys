@@ -19,7 +19,7 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 15px;
-      table-layout: fixed; /* ✅ Needed for manual resizing */
+      table-layout: fixed;
     }
     table, th, td {
       border: 1px solid #ccc;
@@ -28,10 +28,8 @@
       padding: 10px;
       text-align: left;
       font-size: 14px;
-      position: relative; /* ✅ For resizer positioning */
+      position: relative;
     }
-
-    /* ✅ Resizer handle */
     .resizer {
       position: absolute;
       right: 0;
@@ -45,7 +43,6 @@
     .resizer:hover, .resizing {
       border-right: 2px solid #007bff;
     }
-
     .controls {
       display: flex;
       justify-content: space-between;
@@ -78,8 +75,6 @@
       border: 1px solid #ccc;
       pointer-events: auto;
     }
-
-    /* ✅ Responsive Design */
     @media (max-width: 768px) {
       table, thead, tbody, th, td, tr {
         display: block;
@@ -162,14 +157,19 @@
   <script>
     let companies = [];
 
-    // ✅ Load data and sort alphabetically by city (case-insensitive)
+    function generateId() {
+      return Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
+    }
+
     async function loadData() {
       const res = await fetch('/data');
       companies = await res.json();
+      companies.forEach(c => { if (!c.id) c.id = generateId(); });
       companies.sort((a, b) => a.city.toLowerCase().localeCompare(b.city.toLowerCase()));
       renderTable(companies);
     }
 
+    // ✅ RENDER TABLE — includes proper action buttons
     function renderTable(data) {
       const tbody = document.querySelector('#supplierTable tbody');
       tbody.innerHTML = '';
@@ -186,40 +186,41 @@
           <td data-label="City"><input value="${item.city || ''}" /></td>
           <td data-label="Company"><input value="${item.company || ''}" /></td>
           <td data-label="Contact Name"><input value="${item.contactName || ''}" /></td>
-          <td data-label="Contact Number">
+
+          <td data-label="Contact Number" class="contact-number">
             <a href="tel:${item.contactNumber || ''}" style="color:#007bff;text-decoration:none;">
               ${item.contactNumber || ''}
             </a>
           </td>
-          <td data-label="Email">
+          <td data-label="Email" class="email">
             <a href="mailto:${item.email || ''}" style="color:#007bff;text-decoration:none;">
               ${item.email || ''}
             </a>
           </td>
-          <td data-label="Website">
+          <td data-label="Website" class="website">
             <a href="${item.website?.startsWith('http') ? item.website : 'https://' + item.website}" target="_blank" style="color:#007bff;text-decoration:none;">
               ${item.website || ''}
             </a>
           </td>
           <td data-label="Actions">
-            <button onclick="toggleEdit(${index}, this)">✏️ Edit</button>
-            <button onclick="deleteRow(${index})">🗑️ Delete</button>
+            <button onclick="toggleEdit('${item.id}', this)">✏️ Edit</button>
+            <button onclick="deleteRow('${item.id}')">🗑️ Delete</button>
           </td>
         `;
         tbody.appendChild(row);
       });
-
-      enableColumnResizing(document.getElementById('supplierTable')); // ✅ Reapply resizers
+      enableColumnResizing(document.getElementById('supplierTable'));
     }
 
-    function toggleEdit(index, btn) {
+    // ✅ EDIT / SAVE TOGGLE
+    function toggleEdit(id, btn) {
       const row = btn.closest('tr');
       const isEditing = row.classList.toggle('editing');
       const tds = row.querySelectorAll('td');
+      const item = companies.find(c => c.id === id);
 
       if (isEditing) {
         btn.textContent = '💾 Save';
-        const item = companies[index];
         tds[5].innerHTML = `<input value="${item.contactNumber || ''}" />`;
         tds[6].innerHTML = `<input value="${item.email || ''}" />`;
         tds[7].innerHTML = `<input value="${item.website || ''}" />`;
@@ -227,6 +228,7 @@
         btn.textContent = '✏️ Edit';
         const cells = row.querySelectorAll('input, select');
         const updated = {
+          id,
           type: cells[0].value,
           city: cells[1].value,
           company: cells[2].value,
@@ -235,21 +237,25 @@
           email: cells[5].value,
           website: cells[6].value
         };
+        const index = companies.findIndex(c => c.id === id);
         companies[index] = updated;
         companies.sort((a, b) => a.city.toLowerCase().localeCompare(b.city.toLowerCase()));
         renderTable(companies);
       }
     }
 
-    function deleteRow(index) {
+    // ✅ DELETE ROW (always works)
+    function deleteRow(id) {
       if (confirm("Are you sure you want to delete this supplier?")) {
-        companies.splice(index, 1);
+        companies = companies.filter(c => c.id !== id);
         renderTable(companies);
       }
     }
 
+    // ADD NEW ROW
     document.getElementById('addBtn').addEventListener('click', () => {
       companies.push({
+        id: generateId(),
         type: "Domestic",
         city: '',
         company: '',
@@ -262,7 +268,7 @@
       renderTable(companies);
     });
 
-    // Sorting toggles
+    // SORT / SEARCH / SAVE / DOWNLOAD
     let cityAsc = true;
     let companyAsc = true;
 
@@ -286,7 +292,6 @@
       renderTable(companies);
     });
 
-    // Search
     document.getElementById('searchInput').addEventListener('input', (e) => {
       const keyword = e.target.value.toLowerCase();
       const filtered = companies.filter(c =>
@@ -297,7 +302,6 @@
       renderTable(filtered);
     });
 
-    // Save to JSON file
     document.getElementById('saveBtn').addEventListener('click', async () => {
       try {
         const res = await fetch('/data', {
@@ -313,7 +317,31 @@
       }
     });
 
-    // ✅ Column resizing logic
+    const downloadBtn = document.createElement('button');
+    downloadBtn.textContent = '⬇️ Download JSON';
+    downloadBtn.style.marginLeft = '10px';
+    document.querySelector('.controls div:last-child').appendChild(downloadBtn);
+
+    downloadBtn.addEventListener('click', () => {
+      const jsonWithIndex = companies.map((c, i) => ({
+        "SI No": i + 1,
+        Type: c.type,
+        City: c.city,
+        Company: c.company,
+        "Contact Name": c.contactName,
+        "Contact Number": c.contactNumber,
+        "Email ID": c.email,
+        Website: c.website
+      }));
+      const date = new Date().toISOString().split('T')[0];
+      const blob = new Blob([JSON.stringify(jsonWithIndex, null, 2)], { type: 'application/json' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `suppliers_${date}.json`;
+      link.click();
+    });
+
+    // ✅ COLUMN RESIZING
     function enableColumnResizing(table) {
       const ths = table.querySelectorAll('th');
       ths.forEach(th => {
@@ -323,7 +351,6 @@
         th.appendChild(resizer);
 
         let startX, startWidth;
-
         resizer.addEventListener('mousedown', (e) => {
           startX = e.pageX;
           startWidth = th.offsetWidth;
@@ -346,7 +373,6 @@
       });
     }
 
-    // Load everything on start
     loadData();
   </script>
 </body>

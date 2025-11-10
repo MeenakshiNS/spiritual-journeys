@@ -1,18 +1,36 @@
 [
   {
     "type": "Domestic",
-    "city": "ANDAMAN",
-    "company": "VISIT 2 ANDAMAN",
-    "contactName": "SHIVJI BABU",
-    "contactNumber": "8001855500, 9933729557",
-    "email": "visit2andamans@gmail.com",
-    "website": "www.visit2andaman.com"
+    "city": "AHMEDABAD",
+    "company": "RAJASTHAN ROUTES",
+    "contactName": "SHAMBHU JODHA",
+    "contactNumber": "0917940308535, 09414048535",
+    "email": "info@gujarattrails.com",
+    "website": "www.gujarattrails.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "AHMEDABAD",
+    "company": "DESTINATION MANAGEMENT COMPANY",
+    "contactName": "HET PATEL",
+    "contactNumber": "9974733085",
+    "email": "",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
+    "city": "AHMEDABAD",
+    "company": "EXPLORE INDIA",
+    "contactName": "CHIRAG PATEL",
+    "contactNumber": "7600833085",
+    "email": "sales@exploreindiadmc.com",
+    "website": "www.exploreindiadmc.com"
   },
   {
     "type": "Domestic",
     "city": "ANDAMAN",
     "company": "GAME FISHING",
-    "contactName": "MR DHARA SHEKAR",
+    "contactName": "MR DHARA SHEKOR",
     "contactNumber": "7999438388",
     "email": "captain.jackgamefishing@gmail.com",
     "website": ""
@@ -75,7 +93,7 @@
     "type": "Domestic",
     "city": "BANGLORE DELHI AGRA DRYABAD GOA",
     "company": "ULLASSA",
-    "contactName": "RITESH SAXENA",
+    "contactName": "RITESH SAVENA",
     "contactNumber": "809574702",
     "email": "ritesh@houseofullassa.com",
     "website": "houseofullassa.com"
@@ -83,7 +101,7 @@
   {
     "type": "Domestic",
     "city": "BENGALURU",
-    "company": "CROWN INN A BOUTIQUE HOTEL",
+    "company": "CROWN INN-A BOUTIQUE HOTEL",
     "contactName": "",
     "contactNumber": "8123504921",
     "email": "royalresidencycr@gmail.com",
@@ -91,9 +109,36 @@
   },
   {
     "type": "Domestic",
+    "city": "BHUBANESWAR - ODISHA",
+    "company": "BHUBANESWAR TRAVEL MART",
+    "contactName": "PRAKASH KUMAR",
+    "contactNumber": "9438234898, 8093555022, 8093555021, 8093555020",
+    "email": "odisha@bbsrtravelmart.in",
+    "website": "www.bhubaneswartravelmart.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "BHUBANESWAR - ODISHA",
+    "company": "TOUR ODISHA",
+    "contactName": "DHANANJAY MOHANTY",
+    "contactNumber": "9439580300, 8144662032",
+    "email": "contact@tour2odisha.com",
+    "website": "www.tour2odisha.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "BHUBANESWAR - KHORDGA - ODISHA",
+    "company": "ASIMITA HOLIDAYS PVT LTD",
+    "contactName": "PANKAJ KUMAR MAHARANA",
+    "contactNumber": "9583954499, 7205844492",
+    "email": "pankaj@ashmitaholidays.com",
+    "website": "www.ashmitaholidays.com"
+  },
+  {
+    "type": "Domestic",
     "city": "CHENNAI",
     "company": "INFO LEISURE HOLIDAYS",
-    "contactName": "THAJDHEENS",
+    "contactName": "THAIJUDEENS",
     "contactNumber": "8891227333, 8138017733",
     "email": "chennai.leisure@gmail.com, info@leisure.in",
     "website": "www.leisure.in"
@@ -109,35 +154,53 @@
   },
   {
     "type": "Domestic",
-    "city": "COCHIN",
-    "company": "APOORVA TRAVELS",
-    "contactName": "JALLY J AUGUSTINE",
-    "contactNumber": "8197564267",
-    "email": "jally@apoorvatravels.com",
-    "website": "www.apoorvatravels.com"
+    "city": "DARJEELING - KOLKATA",
+    "company": "TRIPJYADA",
+    "contactName": "SUBHAJIT RAHUL",
+    "contactNumber": "9558515518",
+    "email": "info@tripjyada.com",
+    "website": "www.tripjyada.com"
   },
   {
     "type": "Domestic",
-    "city": "COCHIN",
-    "company": "GREHASOFT",
-    "contactName": "RAJ T SKARIA K A",
-    "contactNumber": "8921540183",
-    "email": "info@grehasoft.com, grehasoft@gmail.com",
-    "website": "www.grehasoft.com"
+    "city": "DARJEELING - KOLKATA - WEST BENGAL",
+    "company": "TRIPJYADA",
+    "contactName": "SUBHAJIT RAHUL",
+    "contactNumber": "",
+    "email": "",
+    "website": "www.tripjyada.com"
   },
   {
     "type": "Domestic",
-    "city": "COCHIN (KAKKANAD)",
-    "company": "VIE ROOTS",
-    "contactName": "DEVIKA VENUGOPAL",
-    "contactNumber": "9778415151",
-    "email": "devika.venugopal@vierootr.com",
-    "website": "www.vieroot.com"
+    "city": "DARJEELING - WEST BENGAL",
+    "company": "TRIPJYADA",
+    "contactName": "DHARMENDRA JHA",
+    "contactNumber": "9083701454",
+    "email": "info@tripjyada.com",
+    "website": "www.tripjyada.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "DARJEELING (WB)",
+    "company": "DARJEELING TRAVELS CAR RENTAL & TOUR PACKAGE",
+    "contactName": "G N KHAN",
+    "contactNumber": "7866886692, 9932595623",
+    "email": "travelsdarjeeling@gmail.com",
+    "website": "www.darjeelingtravels.in"
   },
   {
     "type": "Domestic",
     "city": "DELHI",
-    "company": "THE MUDAY POINT",
+    "company": "VISMORA VISA SIMPLIFIED",
+    "contactName": "RISHABH AHUJA",
+    "contactNumber": "7289966395",
+    "email": "Rishabh@vismora.com",
+    "website": "www.vismora.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "DELHI",
+    "company": "THE HUDAY POINT",
     "contactName": "MR NANDKISHOR VERMA",
     "contactNumber": "9899690208, 9873670208",
     "email": "info@theholidaypoint.com",
@@ -147,7 +210,7 @@
     "type": "Domestic",
     "city": "DELHI",
     "company": "DYNASTY HOLIDAYS",
-    "contactName": "MR KUNDAN PODDAR",
+    "contactName": "MR KUNDAN POGDAR",
     "contactNumber": "008277999303",
     "email": "kundan@dynastyholidays.com",
     "website": "www.dynastykorea.com"
@@ -192,7 +255,7 @@
     "type": "Domestic",
     "city": "DELHI",
     "company": "OTOAI",
-    "contactName": "MRS GEETAKSHI ARORA",
+    "contactName": "MRS GEETAKSH ARORA",
     "contactNumber": "999990890, 9211992594",
     "email": "info@otoai.travel, office@otoai.travel",
     "website": "otoai.travel"
@@ -201,9 +264,9 @@
     "type": "Domestic",
     "city": "DELHI",
     "company": "MOM",
-    "contactName": "MRS SASHI SHERMA",
+    "contactName": "MRS SASHI SHARMA",
     "contactNumber": "9958797165",
-    "email": "sashi@mindonmarketig.in",
+    "email": "sashi@mindonmarketing.in",
     "website": "www.mindonmarketing.in"
   },
   {
@@ -219,7 +282,7 @@
     "type": "Domestic",
     "city": "DELHI",
     "company": "THE PLANNERS",
-    "contactName": "MR SANSHKAR MISHRA",
+    "contactName": "MR SANSHAR MISHRA",
     "contactNumber": "9871996707",
     "email": "bijay@theplanners.in",
     "website": "www.theplanners.in"
@@ -235,7 +298,7 @@
   },
   {
     "type": "Domestic",
-    "city": "DELHI BANGALORE",
+    "city": "DELHI BANGLORE",
     "company": "INDIAN CIRCUIT HOLIDAYS",
     "contactName": "MR SANJAY SINGH",
     "contactNumber": "9810325955, 01204315973",
@@ -253,9 +316,9 @@
   },
   {
     "type": "Domestic",
-    "city": "ERNAKULAM (ADUVASSERY)",
+    "city": "ERNAKULAM (ADUASSERY)",
     "company": "HOPE TOURS AND TRAVELS",
-    "contactName": "ALI JAIM",
+    "contactName": "ALI JAM",
     "contactNumber": "7736097454",
     "email": "info@thehopetours.com",
     "website": "www.thehopetours.com"
@@ -271,9 +334,144 @@
   },
   {
     "type": "Domestic",
+    "city": "GURUVAYOOR",
+    "company": "POORNIMA TOURIST HOME",
+    "contactName": "POORNIMA",
+    "contactNumber": "9446431800, 6282376118",
+    "email": "poornimaguruvayoor@gmail.com",
+    "website": "www.poornimaguruvayoor.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "HOWRAH - WEST BENGAL",
+    "company": "BHANU BHAI TOURS & TRAVELS",
+    "contactName": "S C SHARMA",
+    "contactNumber": "9831160983, 9830160983, 9831071983",
+    "email": "plattinum4u@rediffmail.com, bhanubhai@scsharma.in",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
+    "city": "Hyderabad - Telangana",
+    "company": "SREE GOWTHAMADITYA HOLIDAYS &RESORTS",
+    "contactName": "AKASH",
+    "contactNumber": "9281111733",
+    "email": "partners@sgholidaysresorts.com",
+    "website": "www.sgholidaysresorts.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "INDORE - MP",
+    "company": "HAPPINESS PLANS",
+    "contactName": "HARSHIT TATED",
+    "contactNumber": "8224803424",
+    "email": "info@happinessplans.com",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
+    "city": "INDORE - MP",
+    "company": "MP INCOMING",
+    "contactName": "ATUL SINGH",
+    "contactNumber": "7314066990, 7312436620",
+    "email": "business@mpincoming.com",
+    "website": "www.mpincoming.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAGDALPUR - CHHATTISGARH",
+    "company": "CHHATTISGARH TOURS PVT LTD",
+    "contactName": "SHAKTI DAS",
+    "contactNumber": "9338382999",
+    "email": "shakti@chhattisharhtours.com",
+    "website": "www.chhattisgarhtours.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAIPUR - (RAJASTHAN)",
+    "company": "SANKALP TOURS AND TRAVELS",
+    "contactName": "JITENDRA (JEETU BHAI)",
+    "contactNumber": "9829054226, 9413334965",
+    "email": "jeetubhai@sankalptours.in, sankalpjaipur@hotmail.com",
+    "website": "www.sankalptours.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAIPUR - RAJASTHAN",
+    "company": "RAJASTHALI TOURS & TRAVELS PVT LTD",
+    "contactName": "HITESH JANGID",
+    "contactNumber": "9785307733",
+    "email": "tours@rajasthalitours.com",
+    "website": "www.rajasthalitours.com, www.rttpl.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAIPUR - RAJASTHAN",
+    "company": "RAJASTHAN CAB",
+    "contactName": "PARMANAND CHOUDHARY",
+    "contactNumber": "9116673293, 7357360888, 9358811941, 9001366095, 01414040687",
+    "email": "rajasthancab@gmail.com, info@rajasthancab.com",
+    "website": "www.rajasthancab.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAIPUR - RAJASTHAN",
+    "company": "VIRASAT",
+    "contactName": "AMAN SONI",
+    "contactNumber": "9828080500, 9828080533, 1413557500",
+    "email": "aman@virasatholidays.com, virasatholidays@gmail.com",
+    "website": "www.virasatholidays.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAISALMER - RAJASTHAN",
+    "company": "OASIS CAMP SAM",
+    "contactName": "JANABKHAN",
+    "contactNumber": "07726885786, 09610312666",
+    "email": "oasisvillajaisalmer@gmail.com, oasishoteljaisalmer@gmail.com",
+    "website": "www.oasiscampsam@gmail.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAISALMER/RAJASTHAN",
+    "company": "JASWANT HOLIDAYS RAJASTHAN",
+    "contactName": "KESHAR SINGH JODHA",
+    "contactNumber": "8209575713, 9573207221",
+    "email": "jaswantdesertcamp@gmail.com, jaswantholidayrajasthan@gmail.com, singhkeshar505@gmail.com",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
+    "city": "KOCHI",
+    "company": "TRIUM MARKETING & CONSULTANTS PVT LTD",
+    "contactName": "ABHAY KUMAR P K",
+    "contactNumber": "04842376663",
+    "email": "abhay@triumindia.in",
+    "website": "www.triumindia.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "KOCHI",
+    "company": "GREHASOFT",
+    "contactName": "RAJIT SKARIA K A",
+    "contactNumber": "8921540183",
+    "email": "info@grehasoft.com, grehasoft@gmail.com",
+    "website": "www.grehasoft.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "KOCHI",
+    "company": "APOORVA TRAVELS",
+    "contactName": "JALLY J AUGUSTINE",
+    "contactNumber": "8197564267",
+    "email": "jally@apoorvatravels.com",
+    "website": "www.apoorvatravels.com"
+  },
+  {
+    "type": "Domestic",
     "city": "KOCHI",
     "company": "FLY MALABAR",
-    "contactName": "FAROOG EBRAHIM",
+    "contactName": "FAROOQ EBRAHIM",
     "contactNumber": "8153808233, 9445674642",
     "email": "ebrgim@flymalabar.com",
     "website": "www.flymalabar.com"
@@ -295,6 +493,33 @@
     "contactNumber": "04842376663, 9349122457",
     "email": "abhay@triumindia.in",
     "website": "www.triumindia.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "KOCHI (KAKKANAD)",
+    "company": "VIE ROOTS",
+    "contactName": "DEVIKA VENUGOPAL",
+    "contactNumber": "9778415151",
+    "email": "devika.venugopal@vierootr.com",
+    "website": "www.vieroot.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "KOLKATA-WB",
+    "company": "TRIP N CARE",
+    "contactName": "SANA-ARSHAD",
+    "contactNumber": "9147150463",
+    "email": "sales@tripncare.com",
+    "website": "www.tripncare.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "KOVALAM - TVM",
+    "company": "UDS HOTELS & RESORTS",
+    "contactName": "REMESH KUMAR R",
+    "contactNumber": "9387217508",
+    "email": "cgmsales@udshotels.com",
+    "website": "www.udhotels.com"
   },
   {
     "type": "Domestic",
@@ -326,7 +551,7 @@
   {
     "type": "Domestic",
     "city": "MUMBAI",
-    "company": "ANMSOFTECH TECHNOLOGIES PRIVATE LIMITED",
+    "company": "ANMSOFTTECH TECHNOLOGIES PRIVATE LIMITED",
     "contactName": "ABHISHEK VERMA",
     "contactNumber": "9995708020",
     "email": "abhishek.verma@anmsoft.com, info@rajasthantourguide.com",
@@ -354,7 +579,7 @@
     "type": "Domestic",
     "city": "MUMBAI",
     "company": "VIRYA WILDLIFE TOURS",
-    "contactName": "PARAS SAVLA",
+    "contactName": "PARAS SAWLA",
     "contactNumber": "9870390353",
     "email": "info@viryawildlifetours.com",
     "website": "www.viryawildlifetours.com"
@@ -370,7 +595,16 @@
   },
   {
     "type": "Domestic",
-    "city": "NEDUMBASSERY AIRPORT ROAD, ADUVASSERY",
+    "city": "NAVRANGPURA - AHMEDABAD",
+    "company": "PATEL BROTHERS HOLIDAY",
+    "contactName": "SHARAD PATEL",
+    "contactNumber": "8488800787",
+    "email": "patelbrothersholiday@gmail.com",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
+    "city": "NEDUMBASSARY AIRPORT ROAD, ADUASSERY",
     "company": "HOPE TOURS AND TRAVELS",
     "contactName": "",
     "contactNumber": "8111925661, 6842925661",
@@ -379,12 +613,66 @@
   },
   {
     "type": "Domestic",
-    "city": "NOIDA UP",
+    "city": "NOIDA - UP",
+    "company": "VEEGO DMC",
+    "contactName": "SATYA NARAYAN PANDA",
+    "contactNumber": "8285001186, 66638706337",
+    "email": "b2b@veegosiam.com",
+    "website": "www.veegosiam.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "NOIDA - UP",
+    "company": "ANYFLY",
+    "contactName": "PRINCE MISHRA",
+    "contactNumber": "9999212811",
+    "email": "b2b@anyfly.in",
+    "website": "www.anyfly.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "NOIDA-UP",
     "company": "HIGH Q TOURISM",
-    "contactName": "BOD CO ANTONY RAJ",
+    "contactName": "BOD C O ANTONY RAJ",
     "contactNumber": "9860079094",
     "email": "bodco@highqtourism.com",
     "website": "www.highqtourism.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "PUNE - MAHARASHTRA",
+    "company": "GURUPRERANA TOURS & TRAVELS",
+    "contactName": "MAKARAND LIGAS",
+    "contactNumber": "9860025114",
+    "email": "gurupreranapune@gmail.com",
+    "website": "www.gurupreranatravels.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "RAJKOT - GUJARAT",
+    "company": "RISHABH TRAVEL AND TOURS",
+    "contactName": "KUNAL SHETH",
+    "contactNumber": "8001855500, 9933729557",
+    "email": "visit2andamans@gmail.com",
+    "website": "www.visit2andaman.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "RUPNAGAR - GUWAHATI",
+    "company": "YAYAVARAH",
+    "contactName": "MR PURUSHOTTAM DAS",
+    "contactNumber": "9435045113, 7637010445",
+    "email": "puru.shottam@yayavarah.com, yayavarah2022@gmail.com",
+    "website": "www.yayavarah.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "SAURASHTRA-KUTCH - GUJARAT",
+    "company": "RISHABH TRAVEL AND TOURS",
+    "contactName": "KUNAL SHETH",
+    "contactNumber": "9879533647",
+    "email": "rajkot@rttworld.in",
+    "website": "www.rttworld.in"
   },
   {
     "type": "Domestic",
@@ -397,8 +685,17 @@
   },
   {
     "type": "Domestic",
+    "city": "SRINAGAR - JAMMU&KASHMIR",
+    "company": "BLUE HILLS TOUR AND TRAVELS",
+    "contactName": "A JAZ AHMAD",
+    "contactNumber": "9469000836, 9419428981, 01942471141",
+    "email": "bluehills786@gmail.com, bluehills014@gmail.com",
+    "website": "www.kashmirhilltours.com"
+  },
+  {
+    "type": "Domestic",
     "city": "THAMMANAM (ERNAKULAM)",
-    "company": "POWER PAUL KLICK MEDIA",
+    "company": "POWER PULL KLICK MEDIA",
     "contactName": "JOBIN PAUL",
     "contactNumber": "9544664831",
     "email": "jobinpaul@powerklickmedia.com",
@@ -406,11 +703,20 @@
   },
   {
     "type": "Domestic",
-    "city": "Tirupati (AP)",
-    "company": "SLV TOURS AND TRAVLS (OPC) PRIVATE LIMITED",
+    "city": "THANE - MAHARASHTRA",
+    "company": "GTF HOLIDAYS GLOBAL TRAVEL FUSION",
+    "contactName": "AMIT KELUSKAR",
+    "contactNumber": "9372733429",
+    "email": "amit.keluskar@gtfholidays.com",
+    "website": "www.gtfholidays.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "TIRUPATI (AP)",
+    "company": "SLV TOURS AND TRAVELS (OPC) PRIVATE LIMITED",
     "contactName": "LAKSHMI PRASANNA",
-    "contactNumber": "8520999318 , 7799330349",
-    "email": "sales5@slvtoursandtravels.com , slvtravels26@gmail.com",
+    "contactNumber": "8520999318, 7799330349",
+    "email": "sales5@slvtoursandtravels.com, slvtravels26@gmail.com",
     "website": "www.slvtoursandtravels.com"
   },
   {
@@ -462,7 +768,7 @@
     "type": "Domestic",
     "city": "VARANASI",
     "company": "ARNAV",
-    "contactName": "MAYUSHI LOHIA",
+    "contactName": "MAYUSHI LOHA",
     "contactNumber": "8840603494",
     "email": "arnavsilkcreations@gmail.com",
     "website": ""
@@ -484,6 +790,15 @@
     "contactNumber": "9565002585, 9317002565",
     "email": "info@travelagentsvaranasi.in",
     "website": "www.travelagentsvaranasi.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "VARANASI - UP",
+    "company": "TRAVEL ZONE",
+    "contactName": "SUDEEP CHAURASIA",
+    "contactNumber": "9839049185",
+    "email": "travelzonetours@gmail.com, sudeep.travelzone@gmail.com",
+    "website": "www.travelzonevaranasi.com"
   },
   {
     "type": "Domestic",
