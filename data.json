@@ -82,6 +82,15 @@
   },
   {
     "type": "Domestic",
+    "city": "BANGLORE , THRISSUR",
+    "company": "WAHNI",
+    "contactName": "RAKIN KARUNAKARAN",
+    "contactNumber": "9535818200",
+    "email": "rakin@wahni.com",
+    "website": "www.wahni.io"
+  },
+  {
+    "type": "Domestic",
     "city": "BANGLORE COCHIN",
     "company": "LIVE THE DAY HOLIDAYS",
     "contactName": "MALAVIKA K. NAIR",
@@ -109,6 +118,42 @@
   },
   {
     "type": "Domestic",
+    "city": "BHUBANESWAR - KHORDGA - ODISHA",
+    "company": "ASIMITA HOLIDAYS PVT LTD",
+    "contactName": "PANKAJ KUMAR MAHARANA",
+    "contactNumber": "9583954499, 7205844492",
+    "email": "pankaj@ashmitaholidays.com",
+    "website": "www.ashmitaholidays.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "BHUBANESWAR - ODISHA",
+    "company": "SAND PEBBLES",
+    "contactName": "DHIREN Ku. NAYAK",
+    "contactNumber": "06742975971 , 9438735971",
+    "email": "sandpebblestourbhabaneshwar ",
+    "website": "www.sandpebblestours.com "
+  },
+  {
+    "type": "Domestic",
+    "city": "BHUBANESWAR - ODISHA",
+    "company": "HOTEL ORANGE",
+    "contactName": "SAROJ KUMAR MALLICK",
+    "contactNumber": "9348066610 , 8260266610",
+    "email": "sales@theorangehotel.com",
+    "website": "www.theorangehotel.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "BHUBANESWAR - ODISHA",
+    "company": "ODISHA DARSHAN",
+    "contactName": "CHANDRAKANTA MAHANTA",
+    "contactNumber": "96682305050 , 3670376060",
+    "email": "odishadarshanholidays@gmail.com",
+    "website": "odishadarshanholidays.in"
+  },
+  {
+    "type": "Domestic",
     "city": "BHUBANESWAR - ODISHA",
     "company": "BHUBANESWAR TRAVEL MART",
     "contactName": "PRAKASH KUMAR",
@@ -127,15 +172,6 @@
   },
   {
     "type": "Domestic",
-    "city": "BHUBANESWAR - KHORDGA - ODISHA",
-    "company": "ASIMITA HOLIDAYS PVT LTD",
-    "contactName": "PANKAJ KUMAR MAHARANA",
-    "contactNumber": "9583954499, 7205844492",
-    "email": "pankaj@ashmitaholidays.com",
-    "website": "www.ashmitaholidays.com"
-  },
-  {
-    "type": "Domestic",
     "city": "CHENNAI",
     "company": "INFO LEISURE HOLIDAYS",
     "contactName": "THAIJUDEENS",
@@ -151,6 +187,24 @@
     "contactNumber": "9841443080, 9370005565",
     "email": "shahmin@malaysia.travel, booking@igtourtimes.in",
     "website": "www.malaysia.travel, www.igtourtimes.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "CHHATTISGARH",
+    "company": "TAKE A TRIP INDIA",
+    "contactName": "BIKY DAS",
+    "contactNumber": "9147416689 , 8961006370",
+    "email": "mail@takeatripindia.com",
+    "website": "www.takeatripindia.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "Coimbatore",
+    "company": "DIFINITY DIGITAL",
+    "contactName": "NIFIN NAZEER",
+    "contactNumber": "9995099789",
+    "email": "nifin.n@difinitydigital.com",
+    "website": "www.difinitydigital.com"
   },
   {
     "type": "Domestic",
@@ -335,6 +389,15 @@
   {
     "type": "Domestic",
     "city": "GURUVAYOOR",
+    "company": "SUNRISE",
+    "contactName": "",
+    "contactNumber": "9947903339",
+    "email": "sunrisgvr@gmail.com",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
+    "city": "GURUVAYOOR",
     "company": "POORNIMA TOURIST HOME",
     "contactName": "POORNIMA",
     "contactNumber": "9446431800, 6282376118",
@@ -379,6 +442,15 @@
   },
   {
     "type": "Domestic",
+    "city": "JADAVPUR - KOLKATA",
+    "company": "ADVENTURE CORPORATION OF INDIA",
+    "contactName": "Dr. BITAN KR DUTTA",
+    "contactNumber": "9433636464",
+    "email": "acttourstrekksllp@gmail.com",
+    "website": "www.actitours.in"
+  },
+  {
+    "type": "Domestic",
     "city": "JAGDALPUR - CHHATTISGARH",
     "company": "CHHATTISGARH TOURS PVT LTD",
     "contactName": "SHAKTI DAS",
@@ -394,6 +466,24 @@
     "contactNumber": "9829054226, 9413334965",
     "email": "jeetubhai@sankalptours.in, sankalpjaipur@hotmail.com",
     "website": "www.sankalptours.in"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAIPUR - AJMER ROAD",
+    "company": "THE PALACE",
+    "contactName": "DEVENDRA SINGH",
+    "contactNumber": "1416655555 , 7412055333",
+    "email": "sales@thepalacejaipur.com",
+    "website": "www.thepalacejaipur.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAIPUR - KOLKATA - SHIMLA - RANTHAMBORE",
+    "company": "RTHM PVT LTD",
+    "contactName": "Mr. Pratik Bhatt",
+    "contactNumber": "9824047747 , 7340047747",
+    "email": "info@royalternhospitality.com",
+    "website": "www.royalternhospitality.com"
   },
   {
     "type": "Domestic",
@@ -425,6 +515,15 @@
   {
     "type": "Domestic",
     "city": "JAISALMER - RAJASTHAN",
+    "company": "MANBHA CAMPS & RESORTS",
+    "contactName": "AKSHAY SHARDA",
+    "contactNumber": "9810038712 , 7014740659",
+    "email": "manbhajaisalmer@gmail.com , akshay.manbha@gmail.com",
+    "website": "www.manbha.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "JAISALMER - RAJASTHAN",
     "company": "OASIS CAMP SAM",
     "contactName": "JANABKHAN",
     "contactNumber": "07726885786, 09610312666",
@@ -439,6 +538,15 @@
     "contactNumber": "8209575713, 9573207221",
     "email": "jaswantdesertcamp@gmail.com, jaswantholidayrajasthan@gmail.com, singhkeshar505@gmail.com",
     "website": ""
+  },
+  {
+    "type": "International",
+    "city": "KABUPATEN BADUNG - BALI",
+    "company": "PT . TRIP MANTRA BALI",
+    "contactName": "MAYANK SHARMA",
+    "contactNumber": "7417492909",
+    "email": "mayanksharma@tripmantra.net",
+    "website": "www.tripmantra.net"
   },
   {
     "type": "Domestic",
@@ -505,6 +613,15 @@
   },
   {
     "type": "Domestic",
+    "city": "KOLKATA",
+    "company": "SAHARA TOUR & TRAVELS",
+    "contactName": "ABHIRUP GHOSH",
+    "contactNumber": "9051566232 , 03324216622",
+    "email": "sttravelsindia@gmail.com ",
+    "website": "saharatourandtravels.com"
+  },
+  {
+    "type": "Domestic",
     "city": "KOLKATA-WB",
     "company": "TRIP N CARE",
     "contactName": "SANA-ARSHAD",
@@ -519,7 +636,16 @@
     "contactName": "REMESH KUMAR R",
     "contactNumber": "9387217508",
     "email": "cgmsales@udshotels.com",
-    "website": "www.udhotels.com"
+    "website": "www.udshots.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "MADHAPUR - HYDERABAD",
+    "company": "RAMOJI",
+    "contactName": "BHASKAR KUNDURTHY",
+    "contactNumber": "9393922366 , 9154769446",
+    "email": "corporatesales@ramojifilmcity.com",
+    "website": "www.ramojifilmcity.com"
   },
   {
     "type": "Domestic",
@@ -691,6 +817,15 @@
     "contactNumber": "9469000836, 9419428981, 01942471141",
     "email": "bluehills786@gmail.com, bluehills014@gmail.com",
     "website": "www.kashmirhilltours.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "SURAT - GUJARAT",
+    "company": "BOOKING JUNCTION PVT LTD",
+    "contactName": "RAVI BHUSHAN SINGH",
+    "contactNumber": "9537319543 , 9227822798",
+    "email": "ravi@bookingjunction.biz",
+    "website": "www.bookingjunction.biz , www.bookingjunction.co.in"
   },
   {
     "type": "Domestic",
