@@ -11,7 +11,7 @@
   {
     "type": "Domestic",
     "city": "AHMEDABAD",
-    "company": "DESTINATION MANAGEMENT COMPANY",
+    "company": "DESTINATION MANAGEMENT company",
     "contactName": "HET PATEL",
     "contactNumber": "9974733085",
     "email": "",
@@ -72,6 +72,51 @@
     "website": "www.greenoceanseaways.com"
   },
   {
+    "type": "International",
+    "city": "BAKU - AZERBAIJAN , PUDUCHERRY ,MUNICH -GERMANY , LONDON - UK",
+    "company": "LUFTHANSA city CENTER DESTINATION EXPLORE",
+    "contactName": "GANNEESH RAMAA",
+    "contactNumber": "+60193811383",
+    "email": "ganneesh@destination-explore.com",
+    "website": "www.destination-explore.com"
+  },
+  {
+    "type": "International",
+    "city": "BALI - INDONESIA",
+    "company": "KCBJ TOURS",
+    "contactName": "ADITYA PRAMANA",
+    "contactNumber": "+6281236662328",
+    "email": "aditya@kcbtours.com",
+    "website": "www.kcbj.tours"
+  },
+  {
+    "type": "International",
+    "city": "BALI - INDONESIA",
+    "company": "LH TRAVELS",
+    "contactName": "NEHA JOHRI",
+    "contactNumber": "919999654223",
+    "email": "salesLhtravels.com",
+    "website": ""
+  },
+  {
+    "type": "International",
+    "city": "BALI - INDONESIA",
+    "company": "BALI AABHARANA HOLIDAYS",
+    "contactName": "SIDDU",
+    "contactNumber": "+6281263141999",
+    "email": "info@baliaabharanadmc.com",
+    "website": "www.baliaabharanadmc.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "BANGLAMUNG - THAILAND",
+    "company": "INDONESIA TOUR &T TRAVEL CO .LTD",
+    "contactName": "DEVARAJ TN ",
+    "contactNumber": "+66832007052  , +919606604635",
+    "email": "info@indosiamtravel.com",
+    "website": "www.indiosiamtravel.com"
+  },
+  {
     "type": "Domestic",
     "city": "BANGLORE",
     "company": "TRAVEL & TOURISM ACADEMY",
@@ -106,6 +151,15 @@
     "contactNumber": "809574702",
     "email": "ritesh@houseofullassa.com",
     "website": "houseofullassa.com"
+  },
+  {
+    "type": "International",
+    "city": "BARMAN TOWER",
+    "company": "RAJ TOURS & TRAVELS",
+    "contactName": "TARUN BARMAN",
+    "contactNumber": "03348098671 , 9007007709",
+    "email": "rajtourstravels101@gmail.com",
+    "website": "rajtourstravels.com"
   },
   {
     "type": "Domestic",
@@ -169,6 +223,24 @@
     "contactNumber": "9439580300, 8144662032",
     "email": "contact@tour2odisha.com",
     "website": "www.tour2odisha.com"
+  },
+  {
+    "type": "International",
+    "city": "BHUTAN",
+    "company": "REN TOUR & TRAVELS",
+    "contactName": "DANEN GIRI",
+    "contactNumber": "+97577287962",
+    "email": "info@reachbhutan.com",
+    "website": "www.reachbhutan.com"
+  },
+  {
+    "type": "International",
+    "city": "BISHKEK - KYRGYZSTAN",
+    "company": "ASIA MOUNTAINS",
+    "contactName": "",
+    "contactNumber": "+996700986148",
+    "email": "office@asiamountains.net",
+    "website": ""
   },
   {
     "type": "Domestic",
@@ -352,12 +424,30 @@
   },
   {
     "type": "Domestic",
+    "city": "DELHI ,  HARIDWAR ,  JAIPUR , CHANDIGARH",
+    "company": "SHIVAYA TOUR AND TRAVELS",
+    "contactName": "AKASH VERMA",
+    "contactNumber": "9149255621  ,  8791224825",
+    "email": "shivayatourandtravels@gmail.com",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
     "city": "DELHI BANGLORE",
     "company": "INDIAN CIRCUIT HOLIDAYS",
     "contactName": "MR SANJAY SINGH",
     "contactNumber": "9810325955, 01204315973",
     "email": "info@indiancircuit.com, sanjay@indiancircuit.com",
     "website": "www.indiancircuit.com"
+  },
+  {
+    "type": "International",
+    "city": "ENGLAND - LONDON",
+    "company": "GLOBAL TRAVEL DMC",
+    "contactName": "AMIT MALHOTRA",
+    "contactNumber": "+447404641048 , +919999515160",
+    "email": "director@globaltdmc.com ",
+    "website": "www.globaltdmc.co.uk"
   },
   {
     "type": "Domestic",
@@ -403,6 +493,33 @@
     "contactNumber": "9446431800, 6282376118",
     "email": "poornimaguruvayoor@gmail.com",
     "website": "www.poornimaguruvayoor.com"
+  },
+  {
+    "type": "International",
+    "city": "HANOI - VIETNAM",
+    "company": "AISA PIONEER DMC",
+    "contactName": "Mr. QUYEN LE",
+    "contactNumber": "+84983145799",
+    "email": "quyen@asiapioneerdmc.com",
+    "website": "www.asiapioneerdmc.com"
+  },
+  {
+    "type": "International",
+    "city": "HANOI - VIETNAM",
+    "company": "VIET DAN TRAVEL",
+    "contactName": "Mr. SUBRAHMANYAM",
+    "contactNumber": "7892898328",
+    "email": "subra@vietdantravel.com",
+    "website": "www.vietdantravel.com"
+  },
+  {
+    "type": "International",
+    "city": "HANOI -VIETNAM",
+    "company": "GLOBAL PRESTIGE TRAVEL ",
+    "contactName": "LINH DO MS (LYDIA)",
+    "contactNumber": "+84833867299",
+    "email": "dos@globalprestigetravel.com",
+    "website": "www.globalprestigetravel.com"
   },
   {
     "type": "Domestic",
@@ -549,6 +666,42 @@
     "website": "www.tripmantra.net"
   },
   {
+    "type": "International",
+    "city": "KATHMANDU - NEPAL",
+    "company": "APOORVA TOURS & TREKS",
+    "contactName": "SHARMILA KV KAFLE",
+    "contactNumber": "97714518649 , +9779802068573",
+    "email": "apoorvaholiday03@gmail.com  ,  apoorvatoursandtreks@gmail.com",
+    "website": "www.apoorvatoursandtreks.com"
+  },
+  {
+    "type": "International",
+    "city": "KATHMANDU - NEPAL ",
+    "company": "HIMALAYAN CLUB TOURS & TRAVELS PVT LTD",
+    "contactName": "BISHNU PANDEY",
+    "contactNumber": "+9779851065420",
+    "email": "himalayanclubnepal@gmail.com  , info@walkmountain.com",
+    "website": "www.himalayanclubnepal.com  , www.walkmountain.com"
+  },
+  {
+    "type": "Domestic",
+    "city": "KATHMANDU -NEPAL",
+    "company": "THE MICE CONNECTION",
+    "contactName": "SHRADHA CHHATRI",
+    "contactNumber": "+9779851363229",
+    "email": "info@themiceconnection.com  , miceconnectionpvtltd@gmail.com",
+    "website": "www.themiceconnection.com"
+  },
+  {
+    "type": "International",
+    "city": "KATHMANDU -NEPAL",
+    "company": "SOHAM JOURNEYS PVT LTD",
+    "contactName": "SURYA PATHAK",
+    "contactNumber": "+9779851113814 , +97714356442",
+    "email": "sohamtreks@gmail.com , sohamjourneys@gmail.com",
+    "website": "www.sohamjourneys.com"
+  },
+  {
     "type": "Domestic",
     "city": "KOCHI",
     "company": "TRIUM MARKETING & CONSULTANTS PVT LTD",
@@ -639,6 +792,51 @@
     "website": "www.udshots.com"
   },
   {
+    "type": "International",
+    "city": "KUALA LUMPUR -MALAYSIA",
+    "company": "DESTINATION EXPLORE",
+    "contactName": "SARAN KUMAR ",
+    "contactNumber": "+60128207362  ,  +918056338623",
+    "email": "saran@destination-explore.com",
+    "website": ""
+  },
+  {
+    "type": "International",
+    "city": "KUCHING -SARAWAK",
+    "company": "AZ SAFIR TRAVEL & TOURS SDN BHD",
+    "contactName": "MOHAMAD NUR ADZIM",
+    "contactNumber": "+6082511001  , +60164547152",
+    "email": "mohdnuradzim035@gmail.com",
+    "website": ""
+  },
+  {
+    "type": "International",
+    "city": "KUWAIT",
+    "company": "KIPCO",
+    "contactName": "EMAN M. AL AWADHI",
+    "contactNumber": "+96522943416 , +96560336399",
+    "email": "eman.alawadhi@kipco.com",
+    "website": "www.kipco.com"
+  },
+  {
+    "type": "International",
+    "city": "KUWAIT",
+    "company": "UNIVERSAL JOURNEY",
+    "contactName": "BHAKTI MHAMUNKAR",
+    "contactNumber": "+96567040395  , +96522451490  / +96522451491  , +96522451495",
+    "email": "Sales3.kuwait@journeyworld.com ",
+    "website": "www.ujtravel.com"
+  },
+  {
+    "type": "International",
+    "city": "KUWAIT",
+    "company": "BOOK MY JOURNEY",
+    "contactName": "BINU KAMATTATH",
+    "contactNumber": "+96567044926   ,  65535421  ,  67044926",
+    "email": "binu@journeysworld.com",
+    "website": "www.bookmyjourneys.com"
+  },
+  {
     "type": "Domestic",
     "city": "MADHAPUR - HYDERABAD",
     "company": "RAMOJI",
@@ -655,6 +853,33 @@
     "contactNumber": "9488811525",
     "email": "",
     "website": ""
+  },
+  {
+    "type": "International",
+    "city": "MANAMA - BAHRAIN",
+    "company": "PROMINENT INDIANS IN GULF",
+    "contactName": "BINU KAMATTATH",
+    "contactNumber": "0096567044926 , +97333002602",
+    "email": "",
+    "website": "www.prominentindians.me"
+  },
+  {
+    "type": "International",
+    "city": "MOSCOW - RUSSIA",
+    "company": "TRAVEL SUPPORT",
+    "contactName": "",
+    "contactNumber": "+79262326600",
+    "email": "office@travel-support.net",
+    "website": ""
+  },
+  {
+    "type": "Domestic",
+    "city": "MUMBAI",
+    "company": "VIET JETAIR .COM GSA BIRD TRAVELS PVT LTD",
+    "contactName": "jitesh H. patil",
+    "contactNumber": "+84835471866 , +84835471865",
+    "email": "bomsalesmgr.vj@bird.travel  , bomsales.vj@bird.travel",
+    "website": "www.vietjetair.com"
   },
   {
     "type": "Domestic",
@@ -720,6 +945,24 @@
     "website": "www.irctctourism.com"
   },
   {
+    "type": "International",
+    "city": "NAGANO - JAPAN , AHMEDABAD",
+    "company": "JIIP TRAVEL PARTNER JAPAN & KOREA DMC",
+    "contactName": "Mr . PAANKAJ SHAH",
+    "contactNumber": "+917359391234 , +819099524821 , +818043411967",
+    "email": "Paankajshah@jiips.jp  , infojtp@jiips.jp",
+    "website": ""
+  },
+  {
+    "type": "International",
+    "city": "NAIROBI - KENYA",
+    "company": "PEARL MARA",
+    "contactName": "MURTAZA ZAKIR",
+    "contactNumber": "+254110222111 , +254722524752",
+    "email": "murtaza@pearlmara.com",
+    "website": "www.pearlmara.com"
+  },
+  {
     "type": "Domestic",
     "city": "NAVRANGPURA - AHMEDABAD",
     "company": "PATEL BROTHERS HOLIDAY",
@@ -765,6 +1008,33 @@
     "website": "www.highqtourism.com"
   },
   {
+    "type": "International",
+    "city": "POKHARA - NEPAL",
+    "company": "GARUDA HOLIDAYS",
+    "contactName": "NEHA KUNWAR",
+    "contactNumber": "+9779763252196",
+    "email": "neha.kunwar@garudaholidaysnepal.com",
+    "website": "www.garudaholidaysnepal.com"
+  },
+  {
+    "type": "International",
+    "city": "POKHARA 6",
+    "company": "WINGS OF HIMALAYAS",
+    "contactName": "ANITA ADHIKARI",
+    "contactNumber": "+9779762569644  ,  +9779802854177",
+    "email": "wingsofhimalayastours@gmail.com",
+    "website": "www.wingsofhimalayas.com.np"
+  },
+  {
+    "type": "International",
+    "city": "PORT BLAIR",
+    "company": "SYMPHONY RESORTS",
+    "contactName": "",
+    "contactNumber": "919609508000  ,  9609507000  , 9476060999  , 9474216000  ,  9932089666",
+    "email": "reservations@symphonyresorts.com",
+    "website": "www.symphonyresorts.com"
+  },
+  {
     "type": "Domestic",
     "city": "PUNE - MAHARASHTRA",
     "company": "GURUPRERANA TOURS & TRAVELS",
@@ -783,6 +1053,15 @@
     "website": "www.visit2andaman.com"
   },
   {
+    "type": "International",
+    "city": "RUKATUNTURI - FINLAND",
+    "company": "MAGICAL POND",
+    "contactName": "",
+    "contactNumber": "+358503004896",
+    "email": "sales@magicalpond.com",
+    "website": "magicalpond.com"
+  },
+  {
     "type": "Domestic",
     "city": "RUPNAGAR - GUWAHATI",
     "company": "YAYAVARAH",
@@ -790,6 +1069,15 @@
     "contactNumber": "9435045113, 7637010445",
     "email": "puru.shottam@yayavarah.com, yayavarah2022@gmail.com",
     "website": "www.yayavarah.com"
+  },
+  {
+    "type": "International",
+    "city": "RUSSIA",
+    "company": "DRIVE TO RUSSIA",
+    "contactName": "ELENA DUDASHVILI",
+    "contactNumber": "+79099402492",
+    "email": "office@drive-to-russia.com",
+    "website": "Drive-to-Russia.com"
   },
   {
     "type": "Domestic",
@@ -801,6 +1089,15 @@
     "website": "www.rttworld.in"
   },
   {
+    "type": "International",
+    "city": "SHIBUYA - TOKYO",
+    "company": "MOTORS JAPAN",
+    "contactName": "SONIA SINGH",
+    "contactNumber": "+919310770855",
+    "email": "sonia@nth-india.com",
+    "website": "www.nth-india.com"
+  },
+  {
     "type": "Domestic",
     "city": "SOUTH ANDAMAN",
     "company": "GO 2 ANDAMAN",
@@ -808,6 +1105,15 @@
     "contactNumber": "9775278555, 9933285975",
     "email": "amitkumar197620@gmail.com",
     "website": "www.go2andaman.in"
+  },
+  {
+    "type": "International",
+    "city": "SOUTH JAKARTA - INDONESIA",
+    "company": "SATSURU TRAVEL ",
+    "contactName": "ESTER SARAGIH",
+    "contactNumber": "+628176639574  , +622150101526",
+    "email": "tour.jkt1@satgurutravel.com",
+    "website": "www.satgurutravel.com"
   },
   {
     "type": "Domestic",
@@ -820,12 +1126,30 @@
   },
   {
     "type": "Domestic",
+    "city": "SURAT ",
+    "company": "BOOKING JUNCTION PVT LTD",
+    "contactName": "HUSSAIN",
+    "contactNumber": "+919316825245",
+    "email": "ops6@bookingjunction.biz",
+    "website": "www.bookingjunction.co.in"
+  },
+  {
+    "type": "Domestic",
     "city": "SURAT - GUJARAT",
     "company": "BOOKING JUNCTION PVT LTD",
     "contactName": "RAVI BHUSHAN SINGH",
     "contactNumber": "9537319543 , 9227822798",
     "email": "ravi@bookingjunction.biz",
     "website": "www.bookingjunction.biz , www.bookingjunction.co.in"
+  },
+  {
+    "type": "International",
+    "city": "TASHKENT - UZBEKISTAN",
+    "company": "FAMILY TOUR",
+    "contactName": "",
+    "contactNumber": "+998933332277  ,  +998935637337",
+    "email": "tourtouzbekistan@gmail.com",
+    "website": "www.tourtouzbekista.com"
   },
   {
     "type": "Domestic",
@@ -846,6 +1170,15 @@
     "website": "www.gtfholidays.com"
   },
   {
+    "type": "International",
+    "city": "TIMPHU - BHUTAN",
+    "company": "TSHERING WANGMA",
+    "contactName": "",
+    "contactNumber": "+97577899921",
+    "email": "info@zhubhutantravels.com",
+    "website": "www.zhubhutantravels.com"
+  },
+  {
     "type": "Domestic",
     "city": "TIRUPATI (AP)",
     "company": "SLV TOURS AND TRAVELS (OPC) PRIVATE LIMITED",
@@ -853,6 +1186,15 @@
     "contactNumber": "8520999318, 7799330349",
     "email": "sales5@slvtoursandtravels.com, slvtravels26@gmail.com",
     "website": "www.slvtoursandtravels.com"
+  },
+  {
+    "type": "International",
+    "city": "TOKYO -JAPAN",
+    "company": "IMAGINE YOUR KOREA",
+    "contactName": "MANISH KUMAR",
+    "contactNumber": "+919899630305 , +919899477207",
+    "email": "manish.kumar@eurasianexpedition.com",
+    "website": "https://eurasianexpedition.com"
   },
   {
     "type": "Domestic",
